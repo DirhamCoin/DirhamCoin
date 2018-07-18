@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ca">locale/dirhamcoin_ca.qm</file>
+        <file alias="da">locale/dirhamcoin_da.qm</file>
+        <file alias="de">locale/dirhamcoin_de.qm</file>
+        <file alias="en">locale/dirhamcoin_en.qm</file>
+        <file alias="en_US">locale/dirhamcoin_en_US.qm</file>
+        <file alias="es">locale/dirhamcoin_es.qm</file>
+        <file alias="fr_FR">locale/dirhamcoin_fr_FR.qm</file>
+        <file alias="it">locale/dirhamcoin_it.qm</file>
+        <file alias="ja">locale/dirhamcoin_ja.qm</file>
+        <file alias="pt">locale/dirhamcoin_pt.qm</file>
+        <file alias="ro_RO">locale/dirhamcoin_ro_RO.qm</file>
+        <file alias="ru">locale/dirhamcoin_ru.qm</file>
+        <file alias="zh_TW">locale/dirhamcoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

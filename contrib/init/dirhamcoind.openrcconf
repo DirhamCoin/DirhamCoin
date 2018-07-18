@@ -1,0 +1,26 @@
+# /etc/conf.d/dirhamcoind: config file for /etc/init.d/dirhamcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/dirhamcoin/dirhamcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/dirhamcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/dirhamcoind.pid"
+
+# Where to write dirhamcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/dirhamcoind"
+
+# User and group to own dirhamcoind process
+#BITCOIND_USER="dirhamcoin"
+#BITCOIND_GROUP="dirhamcoin"
+
+# Path to dirhamcoind executable
+#BITCOIND_BIN="/usr/bin/dirhamcoind"
+
+# Nice value to run dirhamcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=dirhamcoin
+Comment=dirhamcoin P2P Cryptocurrency
+Comment[fr]=dirhamcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=dirhamcoin, eşten eşe kriptografik sanal para birimi
+Exec=dirhamcoin-qt %u
+Terminal=false
+Type=Application
+Icon=dirhamcoin128
+MimeType=x-scheme-handler/dirhamcoin;
+Categories=Office;Finance;
