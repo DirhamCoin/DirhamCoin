@@ -295,7 +295,7 @@ void BIP32Hash(const unsigned char chainCode[32], unsigned int nChild, unsigned 
 
 void scrypt_hash(const char* pass, unsigned int pLen, const char* salt, unsigned int sLen, char* output, unsigned int N, unsigned int r, unsigned int p, unsigned int dkLen);
 
-emplate<typename T1>
+template<typename T1>
 inline uint256 XEVAN(const T1 pbegin, const T1 pend)
 {
     //LogPrintf("X11 Hash \n");
