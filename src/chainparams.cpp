@@ -114,10 +114,10 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1523278879;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 2355680;
+        genesis.nNonce = 2723881;
         hashGenesisBlock = genesis.GetHash();
 		
-        assert(hashGenesisBlock == uint256("0x00000087c8837e62137270d4cedbe78d10e74a77859c7b8e2f55eb6429999c81"));
+        assert(hashGenesisBlock == uint256("0x00000e6ad3f42b86950603bf86c6e5435aee2a65bfe59b60139570a052de2587"));
         assert(genesis.hashMerkleRoot == uint256("0x582a2d4f1859494896b15ff2f3d6be4cc8d2fac3880baa9fe3f93be8bf1fea41"));
 		
 		vSeeds.push_back(CDNSSeedData("199.247.1.21", "199.247.1.21"));
