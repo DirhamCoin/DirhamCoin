@@ -143,22 +143,14 @@ HEADERS += src/activemasternode.h \
            src/crypto/sha256.h \
            src/crypto/sha512.h \
            src/crypto/sph_blake.h \
-           src/crypto/sph_bmw.h \
-           src/crypto/sph_cubehash.h \
-           src/crypto/sph_echo.h \
            src/crypto/sph_groestl.h \
-		   src/crypto/sph_haval.h \
-		   src/crypto/sph_sha2.h \
-		   src/crypto/sph_whirlpool.h \
-		   src/crypto/sph_shabal.h \
-		   src/crypto/sph_fugue.h \
-		   src/crypto/sph_hamsi.h \
            src/crypto/sph_jh.h \
            src/crypto/sph_keccak.h \
-           src/crypto/sph_luffa.h \
-           src/crypto/sph_shavite.h \
-           src/crypto/sph_simd.h \
            src/crypto/sph_skein.h \
+           src/crypto/sph_cubehash.h \
+           src/crypto/sph_fugue.h \
+           src/crypto/sph_gost.h \
+		   src/crypto/sph_echo.h \
            src/crypto/sph_types.h \
            src/json/json_spirit.h \
            src/json/json_spirit_error_position.h \
@@ -449,27 +441,20 @@ SOURCES += src/activemasternode.cpp \
            src/crypto/bmw.c \
            src/crypto/cubehash.c \
            src/crypto/echo.c \
-           src/crypto/groestl.c \
-		   src/crypto/fugue.c \
-		   src/crypto/hamsi.c \
-		   src/crypto/haval.c \
-		   src/crypto/sha2.c \
-		   src/crypto/shabal.c \
+		   src/crypto/groestl.c \
+		   src/crypto/jh.c \
+           src/crypto/keccak.c \
+		   src/crypto/luffa.c \
+		   src/crypto/shavite.c \
+           src/crypto/simd.c \
+		   src/crypto/skein.c \
            src/crypto/hmac_sha256.cpp \
            src/crypto/hmac_sha512.cpp \
-           src/crypto/jh.c \
-           src/crypto/keccak.c \
-           src/crypto/luffa.c \
            src/crypto/rfc6979_hmac_sha256.cpp \
            src/crypto/ripemd160.cpp \
            src/crypto/sha1.cpp \
            src/crypto/sha256.cpp \
            src/crypto/sha512.cpp \
-           src/crypto/shavite.c \
-           src/crypto/simd.c \
-           src/crypto/skein.c \
-		   src/crypto/whirlpool.c \
-		   src/crypto/sph_sha2big.c \
            src/json/json_spirit_reader.cpp \
            src/json/json_spirit_value.cpp \
            src/json/json_spirit_writer.cpp \

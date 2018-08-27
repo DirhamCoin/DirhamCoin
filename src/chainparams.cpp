@@ -48,9 +48,9 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	(0, uint256("0x00000ce5929489f9eb2b33ab8fc8c07c458f20dd07c319806a268c9221945738"))
-	(1, uint256("0x00000ee4dd7f221122bd41fe7ddb2116db8e09d67aa5fb157feb527a4dae6828"))
-	(2, uint256("0x000008e6d2c7bcea3494614985c933831d9b8c8b7463e5764b06569f15a4683f"));
+	(0, uint256("0x000001ce741fbe41c0598bf574032d13f3a7d3b78a10413a40b146caf24fe103"))
+	(1, uint256("0x000000b9ced9c7281509ac9cc759912f98e60cbd46162ce82075c33c431f1fa8"))
+	(2, uint256("0x00000136b8a8278d3924d6cd5ba9ad79c08944b9b5b86ed2452cd996909f6720"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -89,7 +89,7 @@ public:
         pchMessageStart[1] = 0x22;
         pchMessageStart[2] = 0x00;
         pchMessageStart[3] = 0xaa;
-        vAlertPubKey = ParseHex("0226172fedc80253796f7a1ae5e99c025a179d52423b8efb12da38b3b4ddbf493f");
+        vAlertPubKey = ParseHex("033a1ae75b6feaccb9dc8af47fb832e922d236dbe732e678c4acc5aece88066c16");
         nDefaultPort = 15415;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // dirhamcoin starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -112,14 +112,14 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1533393459;
+        genesis.nTime = 1535372140;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 7942901;
+        genesis.nNonce = 12474806;
         hashGenesisBlock = genesis.GetHash();
 		
-        assert(hashGenesisBlock == uint256("0x00000ce5929489f9eb2b33ab8fc8c07c458f20dd07c319806a268c9221945738"));
+        assert(hashGenesisBlock == uint256("0x000001ce741fbe41c0598bf574032d13f3a7d3b78a10413a40b146caf24fe103"));
         assert(genesis.hashMerkleRoot == uint256("0x582a2d4f1859494896b15ff2f3d6be4cc8d2fac3880baa9fe3f93be8bf1fea41"));
-
+	
 		vSeeds.push_back(CDNSSeedData("199.247.1.21", "199.247.1.21"));
 	    vSeeds.push_back(CDNSSeedData("45.76.34.223", "45.76.34.223"));
 	    vSeeds.push_back(CDNSSeedData("45.77.206.148", "45.77.206.148"));
@@ -144,7 +144,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
         nPoolMaxTransactions = 3;
-        strSporkKey = "0226172fedc80253796f7a1ae5e99c025a179d52423b8efb12da38b3b4ddbf493f";
+        strSporkKey = "033a1ae75b6feaccb9dc8af47fb832e922d236dbe732e678c4acc5aece88066c16";
         
         strObfuscationPoolDummyAddress = "DWSbBnzmNkjDVaYHX7vkL1MqD96pRYWtZo";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT

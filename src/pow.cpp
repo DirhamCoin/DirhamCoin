@@ -5,6 +5,7 @@
 
 #include "pow.h"
 
+#include "hashblock.h"
 #include "hash.h"
 #include "chain.h"
 #include "chainparams.h"
@@ -116,7 +117,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 	return DarkGravityWave(pindexLast);
 }
 
-bool CheckProofOfWork(uint256 XEVAN, unsigned int nBits)
+bool CheckProofOfWork(uint256 Phi1612, unsigned int nBits)
 {
     bool fNegative;
     bool fOverflow;
@@ -132,7 +133,7 @@ bool CheckProofOfWork(uint256 XEVAN, unsigned int nBits)
         return error("CheckProofOfWork() : nBits below minimum work");
 
     // Check proof of work matches claimed amount
-    //if (XEVAN > bnTarget)
+    //if (Phi1612 > bnTarget)
      //   return error("CheckProofOfWork() : hash doesn't match nBits");
 
     return true;

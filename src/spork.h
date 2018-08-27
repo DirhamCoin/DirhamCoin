@@ -14,6 +14,7 @@
 #include "sync.h"
 #include "util.h"
 #include "hash.h"
+#include "hashblock.h"
 
 #include "obfuscation.h"
 #include "protocol.h"
@@ -81,7 +82,7 @@ public:
 
     uint256 GetHash()
     {
-        uint256 n = XEVAN(BEGIN(nSporkID), END(nTimeSigned));
+        uint256 n = Phi1612(BEGIN(nSporkID), END(nTimeSigned));
         return n;
     }
 

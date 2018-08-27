@@ -69,7 +69,7 @@ bool fCheckBlockIndex = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60 * 60 * 3;
+unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -1617,19 +1617,19 @@ int64_t GetBlockValue(int nHeight)
 
 
     if (nHeight == 0) {
-        nSubsidy = 10800000 * COIN;
-    } else if (nHeight <= 200 && nHeight > 0) {
+        nSubsidy = 10300000 * COIN;
+    } else if (nHeight <= 800 && nHeight > 0) {
         nSubsidy = 0 * COIN;
-    } else if (nHeight <= 75000 && nHeight > 200) {
-        nSubsidy = 100 * COIN;
-	} else if (nHeight <= 150000 && nHeight > 75000) {
-		nSubsidy = 50 * COIN;
-    } else if (nHeight <= 250000 && nHeight > 150000) {
-		nSubsidy = 25 * COIN;
-    } else if (nHeight <= 500000 && nHeight > 250000) {
-		nSubsidy = 10 * COIN;
-    } else if (nHeight > 500000) {
-		nSubsidy = 5 * COIN;
+    } else if (nHeight <= 25000 && nHeight > 800) {
+        nSubsidy = 34.5 * COIN;
+	} else if (nHeight <= 100000 && nHeight > 25000) {
+		nSubsidy = 17.625 * COIN;
+    } else if (nHeight <= 200000 && nHeight > 100000) {
+		nSubsidy = 8.65 * COIN;
+    } else if (nHeight <= 360000 && nHeight > 200000) {
+		nSubsidy = 4.3125 * COIN;
+    } else if (nHeight <= 50546500 && nHeight > 360000) {
+		nSubsidy = 2.1562 * COIN;
     }else {
         nSubsidy = 0 * COIN;
     }
@@ -1648,7 +1648,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 	if (nHeight == 0)
 		return 0;
 	
-    if (nHeight < 500) {
+    if (nHeight < 800) {
         ret = 0;
     } else {
 		ret = blockValue * 0.7;
